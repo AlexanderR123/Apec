@@ -1,11 +1,14 @@
-name: Build 1.18
+name: Build 1.19
 
 on:
+  label:
+    types:
+      - created
   push:
-    branches: [ "1.18" ]
+    branches: [ "1.19" , "main"]
   pull_request:
-    branches: [ "1.18" ]
-
+    branches: [ "1.19" ]
+    
 permissions:
   contents: read
 
